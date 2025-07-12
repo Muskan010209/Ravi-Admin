@@ -1,4 +1,4 @@
-import React from 'react';
+import { TfiFilter } from "react-icons/tfi";
 
 const jobs = [
   {
@@ -34,7 +34,11 @@ const UpcomingJobs = () => {
   return (
     <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-sm flex flex-col justify-between">
       <div>
-        <h3 className="font-semibold text-neutral mb-4">Upcoming Jobs</h3>
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="font-semibold text-neutral">Upcoming Jobs</h3>
+          <TfiFilter size={20} className="text-neutral" />
+        </div>
+
         <hr />
         <div className="space-y-3 mt-4">
           {jobs.map((job, id) => (
@@ -42,15 +46,13 @@ const UpcomingJobs = () => {
               key={id}
               className={`p-3 rounded-lg text-white ${job.color} min-h-[70px] flex items-center justify-between`}
             >
-              {/* Left: Job info */}
               <div>
                 <h4 className="font-semibold text-sm mb-1">{job.id}</h4>
                 <p className="text-xs">{job.time}</p>
               </div>
 
-              {/* Right: Avatar + Info */}
               <div className="flex items-center gap-2 text-xs">
-                
+
                 <div className="flex flex-col leading-tight">
                   <span className="font-semibold text-center">{job.name}</span>
                   <span className="text-[11px]">{job.phone}</span>
