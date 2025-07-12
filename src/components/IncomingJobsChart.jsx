@@ -15,7 +15,7 @@ const data = [
 
 const IncomingJobsChart = () => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-2xl mx-auto h-[350px]">
+    <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-2xl mx-auto h-[480px]">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800">Incoming Jobs</h3>
         <div className="flex space-x-2">
