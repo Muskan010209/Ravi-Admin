@@ -4,7 +4,7 @@ const boxes = [
   { label: 'In Transit', amount: '$400.00', color: 'bg-yellow-100', text: 'text-yellow-700' },
   { label: 'Overdue', amount: '$125.77', color: 'bg-blue-100', text: 'text-blue-700' },
   { label: 'Due', amount: '$443.74', color: 'bg-red-100', text: 'text-red-700' },
-  { label: 'Successful', amount: '$1 342.00', color: 'bg-green-100', text: 'text-green-700' },
+  { label: 'Successful', amount: '$1,342.00', color: 'bg-green-100', text: 'text-green-700' },
   { label: 'Failed', amount: '$125.77', color: 'bg-red-100', text: 'text-red-700' },
 ];
 
@@ -15,7 +15,7 @@ const PaymentsSummary = () => {
         {boxes.slice(0, 3).map((box, id) => (
           <div
             key={id}
-            className={`${box.color} ${box.text} rounded-lg p-4 text-center shadow min-h-[100px] flex flex-col justify-center`}
+            className={`${box.color} ${box.text} rounded-lg p-3 text-center shadow min-h-[80px] flex flex-col justify-center`}
           >
             <div className="font-bold text-lg">{box.amount}</div>
             <div className="text-sm">{box.label}</div>
@@ -27,7 +27,7 @@ const PaymentsSummary = () => {
         {boxes.slice(3).map((box, id) => (
           <div
             key={id}
-            className={`${box.color} ${box.text} rounded-lg p-4 text-center shadow min-h-[100px] flex flex-col justify-center`}
+            className={`${box.color} ${box.text} rounded-lg p-5 text-center shadow min-h-[120px] flex flex-col justify-center`}
           >
             <div className="font-bold text-lg">{box.amount}</div>
             <div className="text-sm">{box.label}</div>

@@ -7,16 +7,16 @@ const JobsAssigned = () => {
 
   return (
     <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-xs flex flex-col justify-between">
-      <div className="flex items-center justify-between border-b pb-4 mb-4">
+      <div className="flex items-center justify-between border-b ">
         <h3 className="font-semibold text-neutral text-sm">Jobs Assigned</h3>
         <div className="flex space-x-2">
           {filters.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`capitalize text-xs  transition text-gray-400 ${activeFilter === filter
-                  ? ' bg-blue-500 border-blue-600 text-xs p-2'
-                  : 'text-gray-500 hover:text-white-600'
+              className={`capitalize text-xs  transition ${activeFilter === filter
+                  ? ' bg-blue-500 border-blue-600 text-xs text-white p-2'
+                  : 'text-gray-500 '
                 }`}
             >
               {filter}

@@ -4,7 +4,7 @@ const Invoice = () => {
   return (
     <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-sm flex flex-col justify-between relative">
       <div>
-        <h3 className="font-semibold text-neutral mb-8">Invoicing</h3>
+        <h3 className="font-semibold text-neutral mb-4">Invoicing</h3>
         <hr />
       </div>
 
