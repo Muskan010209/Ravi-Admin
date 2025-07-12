@@ -8,7 +8,7 @@ const Invoice = () => {
         <hr />
       </div>
 
-      <div className="absolute top-[80px] bottom-[80px] left-1/2 w-px bg-gray-300" />
+      <div className="absolute top-[52px] bottom-[0px] left-1/2 w-px bg-gray-300" />
 
       <div className="flex flex-col items-center justify-center mt-4 mb-4">
         <div className="flex w-full relative ">
