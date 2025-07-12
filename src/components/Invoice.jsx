@@ -4,11 +4,11 @@ const Invoice = () => {
   return (
     <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-sm flex flex-col justify-between relative">
       <div>
-        <h3 className="font-semibold text-neutral mb-4">Invoicing</h3>
+        <h3 className="font-semibold text-neutral mb-8">Invoicing</h3>
         <hr />
       </div>
 
-      <div className="absolute top-[52px] bottom-[0px] left-1/2 w-px bg-gray-300" />
+      <div className="absolute top-[68px] bottom-[0px] left-1/2 w-px bg-gray-300" />
 
       <div className="flex flex-col items-center justify-center mt-4 mb-4">
         <div className="flex w-full relative ">

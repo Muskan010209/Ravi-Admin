@@ -5,7 +5,7 @@ const JobsComponent = ({ title, jobs, filter = false, onJobClick }) => {
   const cardColors = ['bg-orange-300', 'bg-blue-400', 'bg-teal-400', 'bg-red-400'];
 
   return (
-    <div className="rounded-xl shadow p-4 space-y-4 bg-white">
+    <div className="rounded-xl shadow p-8 space-y-4 bg-white">
       <div className="flex justify-between items-center flex-wrap gap-2">
         <h3 className="font-semibold text-neutral text-sm">
           {title} ({jobs.length})

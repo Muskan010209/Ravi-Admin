@@ -6,25 +6,24 @@ const JobsAssigned = () => {
   const filters = ['today', 'this week', 'this month'];
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-sm flex flex-col justify-between">
+    <div className="bg-white p-4 rounded-xl shadow h-[350px] w-full text-xs flex flex-col justify-between">
       <div className="flex items-center justify-between border-b pb-4 mb-4">
-        <h3 className="font-semibold text-neutral">Jobs Assigned</h3>
+        <h3 className="font-semibold text-neutral text-sm">Jobs Assigned</h3>
         <div className="flex space-x-2">
           {filters.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`capitalize text-xs  transition font-medium ${
-                activeFilter === filter
-                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                  : 'text-gray-500 hover:text-blue-600'
-              }`}
+              className={`capitalize text-xs  transition text-gray-400 ${activeFilter === filter
+                  ? ' bg-blue-500 border-blue-600 text-xs p-2'
+                  : 'text-gray-500 hover:text-white-600'
+                }`}
             >
               {filter}
             </button>
           ))}
         </div>
-        
+
       </div>
 
 
@@ -48,18 +47,18 @@ const JobsAssigned = () => {
         </div>
       </div>
 
-     <div className="text-sm text-center text-neutral mt-2">
-  <div className="flex items-center justify-center space-x-6">
-    <div className="flex items-center space-x-2">
-      <span className="w-2 h-2 rounded-full bg-blue-600 inline-block"></span>
-      <span>Total Assigned</span>
-    </div>
-    <div className="flex items-center space-x-2">
-      <span className="w-2 h-2 rounded-full bg-gray-400 inline-block"></span>
-      <span>Total Incoming Jobs</span>
-    </div>
-  </div>
-</div>
+      <div className="text-sm text-center text-neutral mt-2">
+        <div className="flex items-center justify-center space-x-6">
+          <div className="flex items-center space-x-2 ">
+            <span className="w-3 h-3 rounded-full bg-blue-600 inline-block "></span>
+            <span className='text-left'>Total Assigned Jobs</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <span className="w-3 h-3 rounded-full bg-gray-400 inline-block"></span>
+            <span className='text-left'>Total Incoming Jobs</span>
+          </div>
+        </div>
+      </div>
 
     </div>
   );
